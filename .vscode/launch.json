@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\fullstack_blog_app\\server\\routes\\index.js",
+            "env": {
+                "MONGODB_URL": "mongodb+srv://pranathkedia04:Y2Oul0MC6yn5xcMU@blog1.hkyrge8.mongodb.net/",
+                "JWT_SECRET_KEY": "poiuytrewqasdfghj",
+                "AUTH_EMAIL": "pranathkedia04@gmail.com",
+                "PORT": "8001",
+                "AUTH_PASSWORD": "Nkedia@12",
+                "NODE_ENV": "development"
+            }
+        },
+        {
+            "type": "node-terminal",
+            "name": "Run Script: start",
+            "request": "launch",
+            "command": "npm run start",
+            "cwd": "${workspaceFolder}\\fullstack_blog_app\\server"
+        }
+    ]
+}
